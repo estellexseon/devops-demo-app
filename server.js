@@ -16,6 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // API endpoint to get server info
 app.get('/api/info', (req, res) => {
   res.json({
+    message: "Updated version deployed.",
     version: '1.0.0',
     environment: NODE_ENV,
     hostname: os.hostname(),
