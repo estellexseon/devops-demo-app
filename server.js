@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/info', (req, res) => {
   res.json({
     message: "Updated version deployed.",
-    version: '1.0.0',
+    version: '1.1.0',
     environment: NODE_ENV,
     hostname: os.hostname(),
     uptime: os.uptime(),
